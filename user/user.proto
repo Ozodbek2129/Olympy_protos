@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option go_package="genproto/userservice";
+
+package user;
+
+service UserService {
+    rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse);
+    rpc LoginUser(LoginUserRequest) returns (LoginUserResponse);
+    rpc StoreRefreshToken(StoreRefreshTokenReq) returns (StoreRefreshTokenRes);
+    rpc GetByUser(LoginUserRequest) returns (GetByUserResponse);
+    rpc RefReshToken(RefReshTokenReq) returns (RefReshTokenRes);
+}
+
+message RefReshTokenRes{
+    string message=1;
+}
+
+message RefReshTokenReq{}
+
+message GetByUserResponse{
+    string id=1;       
+	string username=2;
+	string password=3;
+	string role=4;
+}
+
+message StoreRefreshTokenRes{}
+
+message StoreRefreshTokenReq{
+    string userId=1;    
+	string token=2;     
+	int64 expiresAt=3; 
+}
+
+message User {
+    int32 id = 1;
+    string username = 2;
+    string password = 3;
+    string role = 4;
+    string created_at = 5;
+    string updated_at=6;
+}
+
+message RegisterUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message RegisterUserResponse {
+    User user = 1;
+}
+
+message LoginUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message LoginUserResponse {
+    User user = 1;
+}
