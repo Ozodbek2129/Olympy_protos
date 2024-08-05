@@ -1,1 +1,0 @@
-# Olympy_protos
