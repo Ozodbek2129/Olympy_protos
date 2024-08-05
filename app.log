@@ -1,0 +1,7 @@
+time=2024-08-05T10:06:22.040+05:00 level=ERROR msg="Malumotlarni olishda xatolik: pq: got 2 parameters but the statement requires 1"
+time=2024-08-05T10:06:22.040+05:00 level=ERROR msg="GetbyUserdan malumotlarni olishda xatolik: pq: got 2 parameters but the statement requires 1"
+time=2024-08-05T10:06:22.040+05:00 level=ERROR msg="GetbyUserda xatolik: rpc error: code = Unknown desc = pq: got 2 parameters but the statement requires 1"
+time=2024-08-05T10:40:47.128+05:00 level=INFO msg="SIGNING_KEY muvaffaqiyatli yangilandi"
+time=2024-08-05T10:41:02.310+05:00 level=INFO msg="SIGNING_KEY muvaffaqiyatli yangilandi"
+time=2024-08-05T10:41:05.289+05:00 level=INFO msg="SIGNING_KEY muvaffaqiyatli yangilandi"
+time=2024-08-05T10:41:57.720+05:00 level=INFO msg="SIGNING_KEY muvaffaqiyatli yangilandi"
